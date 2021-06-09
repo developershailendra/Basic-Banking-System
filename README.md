@@ -12,8 +12,9 @@ Create a simple dynamic website which has the following specs.
 -> Host the website at 000webhost.
 
 # Tech Stack
-
-FRONT END: HTML, CSS, JavaScript, Bootstrap BACK END: PHP DATABASE: MySQL
+**FRONT END**: HTML, CSS, JavaScript, Bootstrap
+**BACK END**: PHP
+**DATABASE**: MySQL
 
 The Website is Hosted at 000webhost.
 
