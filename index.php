@@ -43,10 +43,10 @@ footer{
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="transactionhistory.php">Transaction History</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="https://localhost/viewallcustomer.php/">View All Customer</a>
+              <a class="nav-link " href="viewallcustomer.php">View All Customer</a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
@@ -130,7 +130,6 @@ footer{
   </div>
 </div>
 
-
   </header>
   <!-- images 3 parts starts -->
   <main>
@@ -186,15 +185,15 @@ footer{
         <div _ngcontent-serverapp-c44="" class="card-body">
           <h5 _ngcontent-serverapp-c44="" class="card-title text-center">Customers</h5>
           <p _ngcontent-serverapp-c44="" class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum debitis vel sed eius, libero mollitia esse reprehenderit commod.</p><a
-            _ngcontent-serverapp-c44="" routerlink="/videos" class="btn btn-primary d-block" href="https://localhost/viewallcustomer.php/">View All Customer</a>
+            _ngcontent-serverapp-c44="" routerlink="/videos" class="btn btn-primary d-block" href="viewallcustomer.php">View All Customer</a>
         </div>
       </div>
       <div _ngcontent-serverapp-c44="" class="card mx-auto my-2 p-2 align-items-center" style="width: 18rem;"><img
           _ngcontent-serverapp-c44="" src="images/card5.jpg" alt="..." class="padded card-img-top">
         <div _ngcontent-serverapp-c44="" class="card-body">
-          <h5 _ngcontent-serverapp-c44="" class="card-title text-center">All Transaction History</h5>
+          <h5 _ngcontent-serverapp-c44="" class="card-title text-center">All Transaction</h5>
           <p _ngcontent-serverapp-c44="" class="card-text text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non architecto odit consequaturcati fuga sint qui!.</p><a
-            _ngcontent-serverapp-c44="" routerlink="/blog" class="btn btn-primary d-block" href="https://localhost/transactionhistory.php/">Transaction History</a>
+            _ngcontent-serverapp-c44="" routerlink="/blog" class="btn btn-primary d-block" href="transactionhistory.php/">Transaction History</a>
         </div>
       </div>
       <div _ngcontent-serverapp-c44="" class="card mx-auto my-2 p-2 align-items-center" style="width: 18rem;"><img
@@ -210,14 +209,14 @@ footer{
     <!-- Responsive left-aligned hero with image -->
               <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-10 col-sm-8 col-lg-6">
-                  <img src="images/card2.jpg" class="d-block mx-lg-auto img-fluids" alt="Bootstrap Themes" loading="lazy" width="700" height="500">
+                  <img src="images/card7.jpg" class="d-block mx-lg-auto img-fluids" alt="Bootstrap Themes" loading="lazy" width="700" height="500">
                 </div>
                 <div class="col-lg-6">
-                  <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
-                  <p class="lead">“I sincerely believe that banking establishments are more dangerous than standing armies, and that the principle of spending money to be paid by posterity, under the name of funding, is but swindling futurity on a large scale.” “Everyday is a bank account, and time is our currency.</p>
+                  <h1 class="display-5 fw-bold lh-1 mb-3">Start Trading With XYZ Bank Demat Account</h1>
+                  <p class="lead">People in the stock markets love to look at the historical prices of a share and make buy or sell decisions. This approach is, needless to say, a loss-making approach in the long term and even in the short term.</p>
                   <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Demat Account</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Trading Account</button>
                   </div>
                 </div>
               </div>
