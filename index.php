@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  <link href="bootstrap/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2013/07/12/19/32/rupees-154955_1280.png" type="image/x-icon">
 
@@ -193,7 +193,7 @@ footer{
         <div _ngcontent-serverapp-c44="" class="card-body">
           <h5 _ngcontent-serverapp-c44="" class="card-title text-center">All Transaction</h5>
           <p _ngcontent-serverapp-c44="" class="card-text text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non architecto odit consequaturcati fuga sint qui!.</p><a
-            _ngcontent-serverapp-c44="" routerlink="/blog" class="btn btn-primary d-block" href="transactionhistory.php/">Transaction History</a>
+            _ngcontent-serverapp-c44="" routerlink="/blog" class="btn btn-primary d-block" href="transactionhistory.php">Transaction History</a>
         </div>
       </div>
       <div _ngcontent-serverapp-c44="" class="card mx-auto my-2 p-2 align-items-center" style="width: 18rem;"><img
@@ -260,7 +260,7 @@ footer{
         </div>
       </div>
     </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+  <script src="bootstrap/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
 </body>
