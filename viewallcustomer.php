@@ -8,8 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="pic.css"> 
   <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2013/07/12/19/32/rupees-154955_1280.png" type="image/x-icon">
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 <style >
 #container{
@@ -56,7 +56,6 @@ font-size: xx-small;
  button{
        font-size: smaller;
        }
-}
 </style>
 <body>
 
@@ -64,7 +63,7 @@ font-size: xx-small;
     <!-- navbarstarting -->
     <nav class="navbar navbar-expand-lg  navbar-dark bg-dark " >
       <div class="container-fluid">
-        <a class="navbar-brand" href="http://localhost/index.php/">XYZ BANK</a>
+        <a class="navbar-brand" href="index.php">XYZ BANK</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -72,25 +71,92 @@ font-size: xx-small;
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="http://localhost/index.php/">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://localhost/transactionhistory.php/">Transaction History</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="https://localhost/form.php/">Transfer Money</a>
+              <a class="nav-link" href="transactionhistory.php">Transaction History</a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
             </li>
           </ul>
           <form class="d-flex">
-            <button class="btn btn-outline-success stylebutton mm " type="submit">Login </button>
-            <button class="btn btn-outline-danger stylebutton mm " type="submit"> Signup</button>
+                <!-- Button trigger modal -->
+             <button type="button" class="btn btn-outline-success stylebutton mm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                   login
+             </button>
+            <!-- Button trigger modal -->
+           <button type="button" class="btn btn-outline-danger stylebutton mm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Signup
+           </button>
           </form>
         </div>
       </div>
     </nav>
+      <!-- navbar end   -->
+ <!-- Button trigger modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Login To XYZ BANK</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+          <div class="modal-body">
+          <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label" Required>Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label" Required>Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+     <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1" required>I accept term and condition</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- signup Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Signup in XYZ BANK</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <form>
+      <div class="mb-3">
+      <label for="exampleInputtext1" class="form-label" Required>Enter Your Full Name</label>
+        <input type="text" class="form-control" id="exampleInputtext1">
+      <label for="exampleInputtext1" class="form-label" Required>Username</label>
+        <input type="text" class="form-control" id="exampleInputtext1">
+        <div id="emailHelp" class="form-text">Your unique username must 4 - 10 characters (only lowecase letters, numbers & underscores allowed) with no spaces .</div>
+        <label for="exampleInputEmail1" class="form-label" Required>Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label" Required>Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+        <label for="exampleInputPassword1" class="form-label" Required>Confirm-Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+     <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1" required>I accept term and condition</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- navbar end   -->
 </header>
 <main>
@@ -105,9 +171,9 @@ font-size: xx-small;
                 </tr>
  <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "bank";
+$username = "id16815079_root";
+$password = "c|%CDDFGuk)Ap5ob";
+$dbname = "id16815079_bank";
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
@@ -134,7 +200,7 @@ else{
        echo "<td>".$row['Customer_Name']."</td>";
        echo "<td>".$row['Customer_Email']."</td>";
        echo "<td >".$row['Current_Balance']."</td>";
-       echo "<td><a class='text-white' href='https://localhost/transfermoney.php/?Id=".$row['Customer_id']." '><button class='button1 btn btn-outline-primary stylebutton'>View Customer</button></a></td>";
+       echo "<td><a class='text-white' href='transfermoney.php?Id=".$row['Customer_id']." '><button class='button1 btn btn-outline-primary stylebutton'>View Customer</button></a></td>";
      // echo "<td><a class='text-white' href='transfer.php?".$row['Sno.']." '><button class='button1'>Transfer Credit</button></a></td>";
      // echo "<td >"."<a href='transfer.php?".$row['Sno.']."'>view</a>"."</td>";
       echo"</tr>";
@@ -182,7 +248,7 @@ else{
         </div>
       </div>
     </footer>     
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+<script src="bootstrap/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
 crossorigin="anonymous"></script>
 </body>
